@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-   <head>
-      <meta charset="utf-8">
-      <title>Simon</title>
-      <link rel="stylesheet" href="./css/style.css">
-      <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-   </head>
-   <body>
-      <div class="help-icon"><i class="fa fa-question-circle"></i></div>
-      <h1 id="level-title">Press A Key to Start</h1>
-      <div class="container">
-         <div class="row">
-            <div type="button" id="green" class="btn green">
-            </div>
-            <div type="button" id="red" class="btn red">
-            </div>
+
+<head>
+   <meta charset="utf-8">
+   <title>Simon</title>
+   <link rel="stylesheet" href="./css/style.css">
+   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+</head>
+
+<body>
+   <div class="help-icon"><i class="fa fa-question-circle"></i></div>
+   <h1 id="level-title">Press A Key to Start</h1>
+   <div class="container">
+      <div class="row">
+         <div type="button" id="green" class="btn green">
          </div>
-         <div class="row">
-            <div type="button" id="yellow" class="btn yellow">
-            </div>
-            <div type="button" id="blue" class="btn blue">
-            </div>
+         <div type="button" id="red" class="btn red">
          </div>
       </div>
-      <button id="play-btn">Start</button>
-      <div class="help">
-         <p>Firstly, the game shows the first colour in the sequence (blue). The player clicks on the blue button.</p>
-         <p> Next, the game shows the next colour (red), the user has to remember the sequence is blue, red and so on and so
-            forth.
-         </p>
-         <p>If the user messes up the sequence, then the game ends.
-         </p>
+      <div class="row">
+         <div type="button" id="yellow" class="btn yellow">
+         </div>
+         <div type="button" id="blue" class="btn blue">
+         </div>
       </div>
-      <!-- jQuery cdn -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <!-- custom script -->
-      <script src="./js/jquery.js"></script>
-   </body>
+   </div>
+   <button id="play-btn">Start</button>
+   <div class="help">
+      <pre>Firstly, the game shows the first colour in the sequence (blue). The player clicks on the blue button.
+            
+            Next, the game shows the next colour (red), the user has to remember the sequence is blue, red and so on and so forth.
+            
+            If the user messes up the sequence, then the game ends.
+      </pre>
+   </div>
+   <!-- jQuery cdn -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <!-- custom script -->
+   <script src="./js/jquery.js"></script>
+</body>
+
 </html>

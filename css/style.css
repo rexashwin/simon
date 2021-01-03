@@ -7,7 +7,8 @@ body {
 	font-family: 'Press Start 2P', cursive;
 	font-size: 3rem;
 	margin: 5% auto 3% auto;
-	color: #fef2bf
+	color: #fef2bf;
+	line-height: 60px;
 }
 
 .container {
@@ -52,10 +53,10 @@ body {
 }
 
 #play-btn {
-	width: 200px;
+	width: 220px;
 	font-family: 'Press Start 2P', cursive;
 	font-size: 1.5rem;
-	border: 2px solid #fef2bf;
+	border: 4px dashed #fef2bf;
 	background-color: #011f3f;
 	color: #fef2bf;
 	padding: 10px 0;
@@ -85,12 +86,18 @@ body {
 	background: #fef2bfbd;
 	justify-content: center;
 	align-items: center;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	z-index: 19999
 }
 
 @media (max-width:1104px) {
 	.container {
 		width: 70%
+	}
+	.help-icon{
+		font-size: 2rem;
+	}
+	#level-title{
+		margin: 8% auto 3% auto
 	}
 }

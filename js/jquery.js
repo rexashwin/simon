@@ -21,10 +21,12 @@ $("#play-btn").click(function () {
 });
 
 $(".btn").on("click", function () {
-    userClickedPattern.push(this.id);
-    animatePress(this.id);
-    playSound(this.id);
-    checkAnswer(userClickedPattern.length - 1);
+    if (started) {
+        userClickedPattern.push(this.id);
+        animatePress(this.id);
+        playSound(this.id);
+        checkAnswer(userClickedPattern.length - 1);
+    }
 });
 
 function nextSequence() {
@@ -97,27 +99,3 @@ $(".help-icon").click(function () {
         }, 3000);
     });
 });
-// $(".help-icon").click(function () {
-//     $(".help").css({
-//         "transform": "scale(1, 1)"
-//     });
-//     $(document).click(function () {
-//         setTimeout(() => {
-//             $(".help").css({
-//                 "transform": "scale(0, 1)"
-//             })
-//         }, 3000);
-//     });
-// });
-// $(".help-icon").click(function () {
-//     $(".help").css({
-//         "transform": "scale(1, 1)"
-//     });
-//     $(document).click(function () {
-//         setTimeout(() => {
-//             $(".help").css({
-//                 "transform": "scale(0, 1)"
-//             })
-//         }, 3000);
-//     });
-// });
